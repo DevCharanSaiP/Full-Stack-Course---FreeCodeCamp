@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Media Player</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #282c34; /* Dark background */
+      color: #e0e0e0; /* Light text */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #61dafb; /* Cyan for main title */
+      font-size: 3em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+    }
+
+    section {
+      background-color: #3a3f47; /* Slightly lighter dark for sections */
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #a0f0a0; /* Greenish-blue for section titles */
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #555;
+      padding-bottom: 10px;
+    }
+
+    audio, video {
+      display: block;
+      margin: 0 auto 20px auto; /* Center media players */
+      width: 100%; /* Make them responsive within their section */
+      max-width: 760px; /* Max width for consistency */
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .transcript p {
+      text-align: left;
+      line-height: 1.8;
+      font-size: 1.1em;
+      background-color: #21252b; /* Even darker background for transcript */
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      white-space: pre-wrap; /* Preserves whitespace and line breaks */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Zenith Media Player</h1>
+
+  <section>
+    <h2>Featured Audio: Sailing Away</h2>
+    <audio controls aria-label="An instrumental track titled Sailing Away, featuring a calm and uplifting melody.">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Educational Video: The 'map()' Method Explained</h2>
+    <video controls width="760" aria-label="An educational video explaining how the JavaScript map method works with examples.">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/What is the map method and how does it work.mp4" type="video/mp4">
+      <track src="transcript-for-map-method.vtt" kind="subtitles" srclang="en" label="English">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <section class="transcript">
+    <h2>Video Transcript</h2>
+    <p>
+      (Video Introduction Music)
+
+      Welcome to this quick tutorial on one of JavaScript's most powerful array methods: `map()`.
+
+      So, what exactly is `map()`? In simple terms, the `map()` method creates a **new array** by calling a provided function on every element in the calling array. It does **not** modify the original array. This is a crucial point.
+
+      Let's look at a quick example. Imagine you have an array of numbers: `[1, 2, 3, 4]`.
+      And you want to double each number.
+
+      Using `map()`, you'd write something like this:
+      `const numbers = [1, 2, 3, 4];`
+      `const doubledNumbers = numbers.map(number => number * 2);`
+
+      After this operation, `doubledNumbers` would be `[2, 4, 6, 8]`, while `numbers` remains `[1, 2, 3, 4]`.
+
+      It's incredibly useful for transforming data. For instance, if you have an array of objects and you want to extract just one property from each object, `map()` is perfect for that.
+
+      Another common use case is rendering lists in frameworks like React or Vue, where you can `map()` over an array of data to generate a list of components.
+
+      Remember, `map()` always returns a new array of the same length as the original. If you don't need a new array, or if you want to filter elements, you might consider `forEach()` or `filter()` instead.
+
+      That's a brief overview of the `map()` method. Keep coding!
+
+      (Outro Music)
+    </p>
+  </section>
+
+</body>
+</html>
