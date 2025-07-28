@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Personal Checkout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      color: #0056b3;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    section {
+      background-color: #fff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #007bff;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .cart-item {
+      text-align: center;
+    }
+    .cart-item img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    form p {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="text"]:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Checkout</h1>
+
+  <section>
+    <h2>Your Cart</h2>
+    <div class="cart-item">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A sleek, shiny blue cube representing a digital product or service.">
+      <p>Awesome Digital Cube (Premium Edition)</p>
+      <p>Price: $99.99</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <p>
+        <label for="card-name">Name on Card:</label>
+        <input type="text" id="card-name" name="card-name" required aria-required="true">
+      </p>
+      <p>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required aria-required="true" pattern="[0-9]{13,16}" title="Card number must be 13 to 16 digits.">
+      </p>
+      </form>
+  </section>
+
+</body>
+</html>
