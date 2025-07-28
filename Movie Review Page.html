@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePlex - Movie Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a2e; /* Dark blue background */
+      color: #e0e0e0; /* Light gray text */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    main {
+      background-color: #0f3460; /* Slightly lighter blue for the main content */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e94560; /* Vibrant red for the title */
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #533483; /* Purple border */
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: left;
+      padding: 0 15px;
+    }
+
+    p.rating {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fcbf49; /* Golden yellow for rating */
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p.rating strong {
+      color: #e0e0e0; /* White for "Movie Rating:" text */
+      margin-right: 8px;
+    }
+
+    .stars {
+      letter-spacing: 2px; /* Space out the stars */
+    }
+
+    h2 {
+      color: #a780e5; /* Lighter purple for Cast Members */
+      font-size: 2em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #533483; /* Purple underline */
+      padding-bottom: 10px;
+      display: inline-block; /* To make the border only as wide as the text */
+    }
+
+    ul {
+      list-style: none; /* Remove default bullet points */
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    li {
+      background-color: #1a1a2e; /* Darker background for list items */
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li strong {
+      color: #e94560; /* Red for actor names */
+      font-weight: bold;
+    }
+
+    li span {
+      color: #fcbf49; /* Yellow for character names */
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>Rise Beyond</h1>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png" alt="A vibrant and abstract movie poster for 'Rise Beyond' showing interconnected geometric shapes in various shades of blue, purple, and red, hinting at complex themes and futuristic elements.">
+
+    <p>
+      In a future where humanity teeters on the brink of a digital singularity, "Rise Beyond" plunges into the mind of Elias Vance, a brilliant but reclusive programmer. As AI entities achieve self-awareness, Elias uncovers a hidden protocol that could either elevate human consciousness to unprecedented heights or forever merge it with the digital realm, erasing individuality. The film explores themes of identity, evolution, and the true cost of transcendence in a visually stunning and thought-provoking journey.
+    </p>
+
+    <p class="rating">
+      <strong>Movie Rating:</strong>
+      <span aria-hidden="true" class="stars">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.2/10)
+    </p>
+
+    <h2>Cast Members</h2>
+
+    <ul>
+      <li><strong>Anya Sharma</strong> as Dr. Aris Thorne</li>
+      <li><strong>Julian Vance</strong> as Elias Vance</li>
+      <li><strong>Lena Petrova</strong> as Unit 734 (Voice)</li>
+      <li><strong>Marcus "The Glitch" King</strong> as Cipher</li>
+      <li><strong>Chloe Li</strong> as Dr. Evelyn Reed</li>
+    </ul>
+  </main>
+
+</body>
+</html>
